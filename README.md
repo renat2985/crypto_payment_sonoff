@@ -13,7 +13,7 @@ We have a similar project with a screen, [check it out](https://github.com/renat
 ### Key Features:
 
 1. **Device Connection:**
-   - When first powered on, if the device can’t find the router or if you press the button on the ESP itself, it will create an access point named “Solana payments.”
+   - When first powered on, if the device can’t find the router or if you press the button on the ESP itself, it will create an access point named “Crypto payments.”
      
      <img src="https://github.com/renat2985/crypto_payment_sonoff/blob/main/doc/WiFi.png" width="200px">
    - Connect to this access point (no password needed) and open a browser, then enter http://192.168.4.1. Usually, after connecting to Wi-Fi, the Captive portal will automatically open and redirect you to the desired page.
@@ -35,7 +35,7 @@ We have a similar project with a screen, [check it out](https://github.com/renat
 
    _Please note, if the blue LED starts flashing, it is a signal that something went wrong. You might have entered your Solana or Toncoin wallet incorrectly. It could also indicate an incorrect CoinMarketCap or Tatum API. If you are using the standard API (without changes), it may have exceeded the limit, and you might need to create your own CoinMarketCap API. The WiFi signal has disappeared. Another reason could be that the trial period of the software has expired._
      
-  <img src="https://github.com/renat2985/crypto_payment_sonoff/blob/main/doc/APFull2.png" width="500px">
+     <img src="https://github.com/renat2985/crypto_payment_sonoff/blob/main/doc/APFull2.png" width="500px">
 
 
 ### Instructions for Self-Assembly:
