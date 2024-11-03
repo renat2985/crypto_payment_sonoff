@@ -5,7 +5,7 @@
 A convenient and fast way to implement paid services using the Solana or TonCoin cryptocurrency. The process is simple: You open any crypto wallet, scan the QR code (for example, it can be printed on a sheet with the required amount), transfer the specified amount, and as soon as the payment is received, the relay will activate and turn on your device for the time you set. This could be any device, from a kettle, coffee machine, or light bulb to powering electricity in a room or another location.
 
 You can assemble the device yourself or ask to build it for you. To order a ready-made device, contact me via [Telegram](https://t.me/ESPiotDevice), [Skype](https://skype:renat2985?chat), [Discord](https://discord.com/invite/zaGaDuGe).
-We have a similar project with a screen, [check it out](https://github.com/renat2985/solana_payment).
+We have a similar project with a screen, [check it out](https://github.com/renat2985/crypto_payment_touchScreen).
 
 
 [![IMAGE ALT TEXT HERE](https://github.com/renat2985/crypto_payment_sonoff/blob/main/doc/intro4.png)](https://www.youtube.com/watch?v=zKdVJmzJNLM&list=PL6NJTNxbvy-LpsI6D_1RM6v5YWDvsm5j4)
