@@ -23,8 +23,8 @@ We have a similar project with a screen, [check it out](https://github.com/renat
 
 2. **Device Configuration:**
    - **Router and Password:** Enter your Wi-Fi connection details.
-   - **Device Name:** Specify a device name, e.g., "Buy coffee.". You can optionally add GPIO pins in this field. Example: Device_name:12,0,13, where Device_name is the name of the device, and 12,0,13 are the corresponding pin numbers for the relay, erase button, and LED (RELAY_PIN,BUTTON_PIN,LED_PIN).
-   - **Your Solana Wallet:** Enter your wallet address to receive payments.
+   - **Crypto Name:** The cryptocurrency associated with the device, for example, "Solana" or "Toncoin". You can optionally include GPIO pins in this field. Example: `Solana:12,11,22`, where "Solana" is the cryptocurrency, and `12, 11, 22` are the corresponding pin numbers for the relay, reset button, and LED (`RELAY_PIN`, `BUTTON_PIN`, `LED_PIN`).
+   - **Your Wallet:** Enter your wallet address to receive payments.
    - **CoinMarketCap API:** Used to retrieve the current Solana exchange rate in fiat currency.
    - **Tatum API:** Used to obtain the balance of your wallet.
    For testing purposes, you can use the built-in APIs; however, for long-term use, it is strongly recommended to register on the respective websites ([coinmarketcap.com](https://coinmarketcap.com/api/) and [tatum.io](https://tatum.io/)) and obtain your own API keys. The free plans allow up to 10,000 requests per month, which is sufficient for 10 devices. However, as the number of devices increases, there may be delays in retrieving up-to-date information, potentially causing issues with payment processing.
