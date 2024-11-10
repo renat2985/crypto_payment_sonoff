@@ -52,16 +52,22 @@ We have added support for SONOFF devices based on the ESP32 (Dual R3, Mini R4, B
 On devices with ESP8266 (Mini R1, Mini R2, S26, S26R2), all GPIO (pins) remained unchanged, and no configuration is required. However, with ESP32, many GPIO pins have changed depending on the device model. We decided not to release separate firmware for each model as it would make maintenance more complicated. Therefore, you will need to manually configure the GPIO for your device.
 To do this, after the device name, add a colon (:) followed by the GPIO for the relay, then the GPIO for the reset button, and finally the GPIO for the LED.
 Below, you will find a list of devices and their corresponding GPIO settings. Simply copy the necessary configurations, and the device should work.
-```
-Dual R3:27,0,13
-Mini R4:26,0,19
-Mini R4M:4,9,19
-Basic R4:4,9,6
-POW 16a:13,0,18
-POW 20a:4,0,18
-POW Ring:21,0,13
-THR316:21,0,15
-```
+
+```Solana:27,0,13``` ```Toncoin:27,0,13```  Dual R3
+
+```Solana:26,0,19``` ```Toncoin:26,0,19``` Mini R4
+
+```Solana:4,9,19``` ```Toncoin:4,9,19``` Mini R4M
+
+```Solana:4,9,6``` ```Toncoin:4,9,6``` Basic R4
+
+```Solana:13,0,18``` ```Toncoin:13,0,18``` POW 16a
+
+```Solana:4,0,18``` ```Toncoin:4,0,18``` POW 20a
+
+```Solana:21,0,13``` ```Toncoin:21,0,13``` POW Ring
+
+```Solana:21,0,15``` ```Toncoin:21,0,15``` THR316
 
 Good luck! If you have any questions, don't hesitate to reach out.
 
