@@ -32,11 +32,17 @@ We have a similar project with a screen, [check it out](https://github.com/renat
    - **Service Currency Price:** Specify the price in your selected currency that the customer should pay.
    - **Payment Tolerance:** In this field, specify the acceptable price deviation. Since the Ton price constantly fluctuates, you need to indicate a deviation range (as a single number) that you are willing to accept for payment.
    - **Relay Work Time:** Specify how long the relay should be activated in seconds. This can range from one second (for simulating a button press) to several minutes or hours.
-
-   _Please note, if the blue LED starts flashing, it is a signal that something went wrong. You might have entered your Solana, Cosmos, Algorand or Toncoin wallet incorrectly. It could also indicate an incorrect CoinMarketCap or Tatum API. If you are using the standard API (without changes), it may have exceeded the limit, and you might need to create your own CoinMarketCap API. The WiFi signal has disappeared. Another reason could be that the trial period of the software has expired._
      
-     <img src="https://github.com/renat2985/crypto_payment_sonoff/blob/main/doc/APFull2.png" width="500px">
+      <img src="https://github.com/renat2985/crypto_payment_sonoff/blob/main/doc/APFull2.png" width="500px">
 
+3. **Reset Settings:**
+      To reset the device to its factory settings, follow these steps:
+      1.	Press the Sonoff button on the device.
+      2.	The device will reboot.
+      3.	After rebooting, a Wi-Fi access point named Crypto Sonoff will appear.
+      The device is now ready for reconfiguration.
+
+_Please note, if the blue LED starts flashing, it is a signal that something went wrong. You might have entered your Solana, Cosmos, Algorand or Toncoin wallet incorrectly. It could also indicate an incorrect [CoinMarketCap API](https://coinmarketcap.com/api/), [Tatum API](https://tatum.io/). If you are using the standard API (without changes), it may have exceeded the limit, and you might need to create your own CoinMarketCap API. The WiFi signal has disappeared. Another reason could be that the trial period of the software has expired._
 
 ### Instructions for Self-Assembly:
 
