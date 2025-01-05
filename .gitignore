@@ -1,0 +1,37 @@
+# Исключаем eerom.ino
+eerom.ino
+
+# Исключаем crypto_payment_sonoff.ino
+crypto_payment_sonoff.ino
+
+# Исключаем файл .elf для проекта crypto_payment_sonoff
+build/esp8266.esp8266.generic/crypto_payment_sonoff.ino.elf
+
+# Исключаем файл .map для проекта crypto_payment_sonoff
+build/esp8266.esp8266.generic/crypto_payment_sonoff.ino.map
+
+
+# Исключаем файл .elf для проекта crypto_payment_sonoff
+build/esp32.esp32.esp32/crypto_payment_sonoff.ino.elf
+
+# Исключаем файл .map для проекта crypto_payment_sonoff
+build/esp32.esp32.esp32/crypto_payment_sonoff.ino.map
+
+
+# Исключаем файл .elf для проекта crypto_payment_sonoff
+build/esp32.esp32.esp32s3/crypto_payment_sonoff.ino.elf
+
+# Исключаем файл .map для проекта crypto_payment_sonoff
+build/esp32.esp32.esp32s3/crypto_payment_sonoff.ino.map
+
+
+# Исключаем файл .elf для проекта crypto_payment_sonoff
+build/esp32.esp32.esp32c3/crypto_payment_sonoff.ino.elf
+
+# Исключаем файл .map для проекта solana_payment_sonoff
+build/esp32.esp32.esp32c3/solana_payment_sonoff.ino.map
+
+
+
+# Игнорируем файл .DS_Store в любой директории
+.DS_Store

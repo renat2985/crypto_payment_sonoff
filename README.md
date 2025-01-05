@@ -13,7 +13,7 @@ We have a similar project with a screen, [check it out](https://github.com/renat
 ### Key Features:
 
 1. **Device Connection:**
-   - When first powered on, if the device can’t find the router or if you press the button on the ESP itself, it will create an access point named “Crypto payments.”
+   - When first powered on, if the device can’t find the router or if you press the button on the Sonoff itself, it will create an access point named “Crypto payments.”
      
      <img src="https://github.com/renat2985/crypto_payment_sonoff/blob/main/doc/WiFi.png" width="200px">
    - Connect to this access point (no password needed) and open a browser, then enter http://192.168.4.1. Usually, after connecting to Wi-Fi, the Captive portal will automatically open and redirect you to the desired page.
@@ -30,16 +30,18 @@ We have a similar project with a screen, [check it out](https://github.com/renat
    For testing purposes, you can use the built-in APIs; however, for long-term use, it is strongly recommended to register on the respective websites ([coinmarketcap.com](https://coinmarketcap.com/api/) and [tatum.io](https://tatum.io/)) and obtain your own API keys. The free plans allow up to 10,000 requests per month, which is sufficient for 10 devices. However, as the number of devices increases, there may be delays in retrieving up-to-date information, potentially causing issues with payment processing.
    - **Currency:** Select the currency in which you want to receive payments (EUR, USD, RUB, BYN, BGN, GBP, etc.). This is necessary for automatic conversion to solana based on the current exchange rate, updated hourly through coinmarketcap.com.
    - **Service Currency Price:** Specify the price in your selected currency that the customer should pay.
-   - **Payment Tolerance:** In this field, specify the acceptable price deviation. Since the Ton price constantly fluctuates, you need to indicate a deviation range (as a single number) that you are willing to accept for payment.
+   - **Payment Tolerance:** In this field, specify the acceptable price deviation. Since the cryptocurrency price constantly fluctuates, you need to indicate a deviation range (as a single number) that you are willing to accept for payment.
    - **Relay Work Time:** Specify how long the relay should be activated in seconds. This can range from one second (for simulating a button press) to several minutes or hours.
      
       <img src="https://github.com/renat2985/crypto_payment_sonoff/blob/main/doc/APFull2.png" width="500px">
 
 3. **Reset Settings:**
+
       To reset the device to its factory settings, follow these steps:
       1.	Press the Sonoff button on the device.
       2.	The device will reboot.
       3.	After rebooting, a Wi-Fi access point named Crypto Sonoff will appear.
+
       The device is now ready for reconfiguration.
 
 _Please note, if the blue LED starts flashing, it is a signal that something went wrong. You might have entered your Solana, Cosmos, Algorand or Toncoin wallet incorrectly. It could also indicate an incorrect [CoinMarketCap API](https://coinmarketcap.com/api/), [Tatum API](https://tatum.io/). If you are using the standard API (without changes), it may have exceeded the limit, and you might need to create your own CoinMarketCap API. The WiFi signal has disappeared. Another reason could be that the trial period of the software has expired._
@@ -54,10 +56,13 @@ For self-assembly you will need any of these devices: SONOFF OLD, [SONOFF RF R2,
   <img src="https://github.com/renat2985/crypto_payment_sonoff/blob/main/doc/flash_gpio4.png" width="500px">
 
 
-We have added support for SONOFF devices based on the ESP32 (Dual R3, Mini R4, Basic R4, POW, THR316), but most of them have not yet undergone full testing. If you encounter any issues, please contact us, and we will do our best to assist you.
-On devices with ESP8266 (Mini R1, Mini R2, S26, S26R2), all GPIO (pins) remained unchanged, and no configuration is required. However, with ESP32, many GPIO pins have changed depending on the device model. We decided not to release separate firmware for each model as it would make maintenance more complicated. Therefore, you will need to manually configure the GPIO for your device.
-To do this, after the device name, add a colon (:) followed by the GPIO for the relay, then the GPIO for the reset button, and finally the GPIO for the LED.
-Below, you will find a list of devices and their corresponding GPIO settings. Simply copy the necessary configurations, and the device should work.
+We have added support for SONOFF devices based on ESP32 (Dual R3, Mini R4, Basic R4, POW, THR316), but most of them have not been fully tested. If you encounter any issues, please contact us, and we will do our best to assist you.
+
+For devices with ESP8266 (Mini R1, Mini R2, S26, S26R2), all GPIO (pins) remain unchanged. You don’t need to configure anything. However, for ESP32, many GPIO pins have changed depending on the device model.
+
+We decided not to release separate firmware for each model, as it would make maintenance more complicated. Instead, you will need to manually configure the GPIO for your device. To do this, in the Crypto Name field, after the cryptocurrency name, add a colon (:), followed by the GPIO for the relay, the GPIO for the reset button, and finally the GPIO for the LED.
+
+Below, you will find a list of devices and their corresponding GPIO settings. Simply copy the required configuration, and your device should work.
 
 Dual R3 ```Solana:27,0,13``` ```Cosmos:27,0,13``` ```Algorand:27,0,13``` ```Toncoin:27,0,13```
 
@@ -75,8 +80,7 @@ POW Ring ```Solana:21,0,13``` ```Cosmos:21,0,13``` ```Algorand:21,0,13``` ```Ton
 
 THR316 ```Solana:21,0,15``` ```Cosmos:21,0,15``` ```Algorand:21,0,15``` ```Toncoin:21,0,15```
 
-Good luck! If you have any questions, don't hesitate to reach out.
-
+Good luck! 
 
 # Web installer (recommended)
 ## [https://renat2985.github.io/crypto_payment_sonoff/](https://renat2985.github.io/crypto_payment_sonoff/)
